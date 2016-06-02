@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/frankirito/lillevisionfest#readme",
   "dependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "wiredep": "^4.0.0"
   }
 }
