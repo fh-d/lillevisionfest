@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/frankirito/lillevisionfest/issues"
   },
-  "homepage": "https://github.com/frankirito/lillevisionfest#readme"
+  "homepage": "https://github.com/frankirito/lillevisionfest#readme",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  }
 }
