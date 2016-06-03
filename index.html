@@ -14,7 +14,14 @@
 </head>
 <body>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<div id="content_wrapper">
+    <div id="move_me">
+        <div id="content1"></div>
+        <div id="content2"></div>
+        <div id="content3"></div>
+        <div id="content4"></div>
 
+    </div>
     <!-- Navigation -->
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
 
@@ -38,13 +45,16 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">About</a>
+                        <a class="page-scroll" href="#about">Évènements</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#download">Download</a>
+                        <a class="page-scroll" href="#download">Programme</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a class="page-scroll" href="#contact">Lieux</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Pratique</a>
                     </li>
                 </ul>
             </div>
@@ -52,6 +62,12 @@
         </div>
         <!-- /.container -->
     </nav>
+    <div class="homeSlider">
+    <div class="slide">
+    </div>
+</div>
+</div>
+
   <!-- bower:js -->
   <script src="bower_components/jquery/dist/jquery.js"></script>
   <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -61,16 +77,33 @@
   <script src="bower_components/fullpage.js/vendors/scrolloverflow.min.js"></script>
   <!-- endbower -->
  <script>
-new Vivus('keyhole', {
+new Vivus('keyhole',  {
     type: 'scenario',
     duration:50,
+    animTimingFunction: Vivus.EASE,
     selfDestroy: true,
-     file: 'logo.svg'
+     file: 'logo.svg',
+     
     
 }, function doDone(obj) {
     obj.el.classList.add('finished');
 });
   </script>
+<script>
+$('#content_wrapper').mousemove(function (e) {
 
+    $('#move_me').animate({
+        'left': -e.pageX + 15 + 'px'
+    }, 0);
+
+});</script>
+<script>
+$('#content_wrapper').mousemove(function (e) {
+
+    $('#move_me').animate({
+        'right': -e.pageX + 155 + 'px'
+    }, 0);
+
+});</script>
 </body>
 </html>
