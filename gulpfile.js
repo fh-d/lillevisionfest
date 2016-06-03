@@ -6,9 +6,10 @@ gulp.task("default", function(){
 gulp.watch("bower.json", ["bower"])
 })
 
-gulp.task('bower', function () {
+
+gulp.task('wiredep', function () {
+  var wiredep = require('wiredep').stream;
   gulp.src('index.html')
     .pipe(wiredep())
     .pipe(gulp.dest('./'));
 });
-

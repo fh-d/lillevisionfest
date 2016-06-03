@@ -87,3 +87,11 @@ html {
         background: #000;
     }
 }
+#mySVG  {
+  fill-opacity: 0;
+  transition: fill-opacity 1s;
+}
+
+#mySVG.finished  {
+  fill-opacity: 1;
+}
