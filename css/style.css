@@ -19,6 +19,7 @@ body{
     font-family: "Clear Sans",Helvetica,Arial,sans-serif;
     color: #fff;
     background-color: #0C0C0C;
+    font-size: 18px;
 }
 
 html {
@@ -27,80 +28,36 @@ html {
 }
 .navbar-custom {
     margin-bottom: 0;
-    border-bottom: 1px solid rgba(255,255,255,.3);
     font-family: 'ClearSans-Bold', sans-serif;    
-    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.6);
     font-size: 18px;
     padding-top: 10px;
-}
-
-
-.navbar-custom .navbar-brand:focus {
-    outline: 0;
-}
-
-.navbar-custom .navbar-brand .navbar-toggle {
-    padding: 4px 6px;
-    font-size: 20px;
-    color: #fff;
-}
-
-.navbar-custom .navbar-brand .navbar-toggle:focus,
-.navbar-custom .navbar-brand .navbar-toggle:active {
-    outline: 0;
-}
+-}
 
 .navbar-custom a {
     color: #fff;
-}
-
-.navbar-custom .nav li a {
-    -webkit-transition: background .3s ease-in-out;
-    -moz-transition: background .3s ease-in-out;
-    transition: background .3s ease-in-out;
+    transition: color 0.5s ease;
 }
 
 .navbar-custom .nav li a:hover {
-    outline: 0;
-    color: rgba(255,255,255,.8);
+    color: grey;
     background-color: transparent;
+    transition: color 0.5s ease;
+    text-decoration: line-through;
+
 }
 
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li a:active {
     outline: 0;
-    background-color: transparent;
-}
-
-.navbar-custom .nav li.active {
-    outline: 0;
-}
-
-.navbar-custom .nav li.active a {
-    background-color: rgba(255,255,255,.3);
+    background-color: black;
+    color: white;
 }
 
 .navbar-custom .nav li.active a:hover {
     color: #fff;
 }
 
-@media(min-width:768px) {
-    .navbar-custom {
-        padding: 20px 0;
-        border-bottom: 0;
-        letter-spacing: 1px;
-        background: 0 0;
-        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        transition: background .5s ease-in-out,padding .5s ease-in-out;
-    }
-
-    .navbar-custom.top-nav-collapse {
-        padding: 0;
-        border-bottom: 1px solid rgba(255,255,255,.3);
-        background: #000;
-    }
-}
 
 svg * {
   fill-opacity: 0;
@@ -156,7 +113,7 @@ svg.finished * {
     background: #0C0C0C;
     width: 25%;
     height:100%;
-        z-index: -50;
+    z-index: -50;
 
 }
 
@@ -164,83 +121,24 @@ svg.finished * {
     font-size: 14px; 
 }
 
-.lead {
-    font-size: 18px;
-    font-weight: 400;
+h1, h2{
+        font-family: "resistanceregular";
+
 }
 .introtitle {
-    font-family: "resistanceregular";
-    font-size: 100px;
+    font-size: 3em;
 }
 
-.intro-header {
-    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
-    padding-bottom: 50px;
-    text-align: center;
-    background-size: cover;
-}
 
-.intro-message {
-    position: relative;
-    padding-top: 20%;
-    padding-bottom: 20%;
-}
 
-.intro-message > h1 {
-    margin: 0;
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-    font-size: 5em;
-}
 
-.intro-divider {
-    width: 400px;
-    border-top: 1px solid #f8f8f8;
-    border-bottom: 1px solid rgba(0,0,0,0.2);
-}
-
-.intro-message > h3 {
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-}
-
-@media(max-width:767px) {
-    .intro-message {
-        padding-bottom: 15%;
-    }
-
-    .intro-message > h1 {
-        font-size: 3em;
-    }
-
-    ul.intro-social-buttons > li {
-        display: block;
-        margin-bottom: 20px;
-        padding: 0;
-    }
-
-    ul.intro-social-buttons > li:last-child {
-        margin-bottom: 0;
-    }
-
-    .intro-divider {
-        width: 100%;
-    }
-}
-
-.network-name {
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: 400;
-    letter-spacing: 2px;
-}
 
 .content-section-a {
     padding: 50px 0;
 }
 
 .content-section-b {
-    padding: 50px 0;
-    border-top: 1px solid #e7e7e7;
-    border-bottom: 1px solid #e7e7e7;
+    padding-top: calc(80vw / 5); 
 }
 
 .section-heading {
@@ -252,11 +150,9 @@ svg.finished * {
     width: 200px;
     border-top: 3px solid #e7e7e7;
 }
-footer {
-    padding: 50px 0;
-    background-color: #f8f8f8;
-}
 
-p.copyright {
-    margin: 15px 0 0;
+.minimum{
+    min-width: 50px;
+    display: inline-block;
+    overflow: hidden;
 }
