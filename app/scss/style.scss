@@ -1,22 +1,10 @@
-@font-face {
-  font-family: 'Clear Sans';
-  src: url('../font/ClearSans-Bold.ttf') format('truetype');
-}
-@font-face {
-    font-family: 'resistanceregular';
-    src: url('../font/resistance_generale-webfont.eot');
-    src: url('../font/resistance_generale-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../font/resistance_generale-webfont.woff2') format('woff2'),
-         url('../font/resistance_generale-webfont.woff') format('woff'),
-         url('../font/resistance_generale-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+@import "config.scss";
+@import "fonts.scss";
 
 body{
     width: 100%;
     height: 100%;
-    font-family: "Clear Sans",Helvetica,Arial,sans-serif;
+    font-family: "Avenir LT Std-Medium", Helvetica,Arial,sans-serif;
     color: #fff;
     background-color: #0C0C0C;
     font-size: 18px;
@@ -105,10 +93,11 @@ svg.finished * {
 #content3 {
     position: absolute;
     left: 80vw;
-    background: #111111;
+    background: red;
     width: 25%;
     height:100%;
-        z-index: -50;
+    z-index: -50;
+    opacity: 0.5;
 
 }
 #content4 {
@@ -126,7 +115,7 @@ svg.finished * {
 }
 
 h1, h2{
-        font-family: "resistanceregular";
+        font-family: "Avenir LT Std-Heavy";
 
 }
 .introtitle {
@@ -159,4 +148,7 @@ h1, h2{
 
 .b-inverse{
     float:right;
+}
+.lead{
+    font-family: Cousine;
 }
