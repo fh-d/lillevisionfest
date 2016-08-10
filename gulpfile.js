@@ -1,15 +1,40 @@
-var gulp = require("gulp")
+var gulp = require('gulp');
 var wiredep = require('wiredep').stream;
-
-
-gulp.task("default", function(){
-gulp.watch("bower.json", ["bower"])
-})
-
+var sass = require('gulp-sass');
+var cssmin = require('gulp-cssmin');
+var rename = require('gulp-rename');
+var postcss    = require('gulp-postcss');
+var sourcemaps = require('gulp-sourcemaps');
 
 gulp.task('wiredep', function () {
-  var wiredep = require('wiredep').stream;
-  gulp.src('index.html')
-    .pipe(wiredep())
+  gulp.src('*.html')
+    .pipe(wiredep({
+
+    }))
     .pipe(gulp.dest('./'));
 });
+
+gulp.task('sass', function(){
+  return gulp.src('app/scss/style.scss')
+    .pipe(sass()) // Converts Sass to CSS with gulp-sass
+    .pipe(gulp.dest('app/css/'))
+});
+
+ gulp.task('default', ['watch'], function() {
+   gulp.start('mini');
+   gulp.start('sass');
+ });
+
+ gulp.task('watch', function() {
+  gulp.watch('app/scss/*.scss', ['sass']);
+  gulp.watch('app/css/*.css', ['mini']);
+ });
+
+gulp.task('mini', function () {
+	gulp.src('app/css/style.css')
+		.pipe(cssmin())
+		.pipe(rename({suffix: '.min'}))
+		.pipe(gulp.dest('app/css'));
+});
+
+

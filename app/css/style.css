@@ -1,0 +1,132 @@
+@font-face {
+  font-family: 'Clear Sans';
+  src: url("../font/ClearSans-Bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'resistanceregular';
+  src: url("../font/resistance_generale-webfont.eot");
+  src: url("../font/resistance_generale-webfont.eot?#iefix") format("embedded-opentype"), url("../font/resistance_generale-webfont.woff2") format("woff2"), url("../font/resistance_generale-webfont.woff") format("woff"), url("../font/resistance_generale-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Clear Sans",Helvetica,Arial,sans-serif;
+  color: #fff;
+  background-color: #0C0C0C;
+  font-size: 18px; }
+
+html {
+  width: 100%;
+  height: 100%; }
+
+.navbar-custom {
+  margin-bottom: 0;
+  font-family: 'ClearSans-Bold', sans-serif;
+  background-color: rgba(0, 0, 0, 0.6);
+  font-size: 18px;
+  padding-top: 10px; }
+
+.navbar-nav {
+  margin-top: 8%; }
+
+.navbar-custom a {
+  color: #fff;
+  transition: color 0.5s ease; }
+
+.navbar-custom .nav li a:hover {
+  color: grey;
+  background-color: transparent;
+  transition: color 0.5s ease;
+  text-decoration: line-through; }
+
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li a:active {
+  outline: 0;
+  background-color: black;
+  color: white; }
+
+.navbar-custom .nav li.active a:hover {
+  color: #fff; }
+
+svg * {
+  fill-opacity: 0;
+  transition: fill-opacity 1s; }
+
+svg.finished * {
+  fill-opacity: 1; }
+
+#keyhole {
+  width: 400px;
+  display: inline-block; }
+
+#move_me {
+  width: 20%;
+  height: 3900px;
+  position: absolute;
+  z-index: -50; }
+
+#content1 {
+  position: absolute;
+  left: 10em;
+  background: #111111;
+  width: 100%;
+  height: 100%;
+  z-index: -50; }
+
+#content2 {
+  position: absolute;
+  left: 50vw;
+  background: #111111;
+  width: 15%;
+  height: 100%;
+  z-index: -50; }
+
+#content3 {
+  position: absolute;
+  left: 80vw;
+  background: #111111;
+  width: 25%;
+  height: 100%;
+  z-index: -50; }
+
+#content4 {
+  position: absolute;
+  left: 20vw;
+  background: #0C0C0C;
+  width: 25%;
+  height: 100%;
+  z-index: -50; }
+
+.topnav {
+  font-size: 14px; }
+
+h1, h2 {
+  font-family: "resistanceregular"; }
+
+.introtitle {
+  font-size: 3em; }
+
+.content-section-a {
+  padding: 50px 0; }
+
+.content-section-b {
+  padding-top: calc(80vw / 5);
+  padding-bottom: calc(80vw / 5); }
+
+.section-heading {
+  margin-bottom: 30px; }
+
+.section-heading-spacer {
+  float: left;
+  width: 200px;
+  border-top: 3px solid #e7e7e7; }
+
+.minimum {
+  min-width: 50px;
+  display: inline-block;
+  overflow: hidden; }
+
+.b-inverse {
+  float: right; }
