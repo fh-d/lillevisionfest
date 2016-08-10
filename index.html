@@ -7,18 +7,14 @@
         <!-- bower:css -->
         <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
         <link rel="stylesheet" href="bower_components/animsition/dist/css/animsition.min.css" />
+        <link rel="stylesheet" href="bower_components/switchery/dist/switchery.css" />
         <!-- endbower -->
         <link rel="stylesheet" href="app/css/style.css" />
     </head>
     <body>
         <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
             <div id="content_wrapper">
-                <div id="move_me">
-                    <div id="content1"></div>
-                    <div id="content2"></div>
-                    <div id="content3"></div>
-                    <div id="content4"></div>
-                </div>
+
                 <!-- Navigation -->
                 <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
                     <div class="container">
@@ -30,6 +26,8 @@
                             </a>
                         </div>
                         <div id="keyhole"></div>
+                        <div id="mobilelogo"></div>
+
                         <!-- Collect the nav links, forms, and other content for toggling -->
                         <div class="collapse navbar-collapse navbar-right">
                             <ul class="nav navbar-nav equal">
@@ -50,6 +48,8 @@
                                     <a class="page-scroll" href="#contact">Pratique</a>
                                 </li>
                             </ul>
+
+  </div>
                         </div>
                         <!-- /.navbar-collapse -->
                     </div>
@@ -60,16 +60,23 @@
                 <div class="content-section-b">
                     <div class="container">
                         <div class="row b-inverse">
-                            <div class="col-lg-5  col-sm-6 minimum ">
-                                <h1 class="introtitle">28-31 <br>
+                            <div class="col-lg-6  col-sm-6 minimum ">
+                                <h1 class="introtitle">28-30 <br>
                                 Septembre <br>
                                 2016. <br></h1>
                             </div>
-                            <div class="col-lg-5  col-sm-6  minimum">
+                            <div class="col-lg-6  col-sm-6  minimum">
                                                                 <p class="lead">Lille Vision Festival propose à travers une programmation ambitieuse et pluridisciplinaire, un panorama des cultures numériques et de la création innovante.
                                    <br> <br>Rendez-vous majeur à l’échelle de la Metropole Européene de Lille, le festival propose en lien avec cette programmation des évènements de rencontres autour des problématiques que se doivent de résoudre le design.
                                   <br> <br> Inscrivez-vous pour recevoir le programme complet et être invités aux évènements LVF.
-                                </p>
+                                </p>			<section class="content bgcolor-3">
+				<span class="input input--kyo">
+					<input class="input__field input__field--kyo" type="text" id="input-19" />
+					<label class="input__label input__label--kyo" for="input-19">
+					</label>
+				</span>
+			</section>
+     <input type="checkbox" class="js-switch" checked />
 
                             </p>                </div>
                         </div>
@@ -80,15 +87,30 @@
                 <div class="content-section-a">
                     <div class="container">
                         <div class="row">
-                            <div class="col-lg-5 col-sm-6">
+                            <div class="col-lg-4 col-sm-4">
                                 <hr class="section-heading-spacer">
                                 <div class="clearfix"></div>
-                                <h2 class="section-heading">28 Septembre <br>2016</h2>
-                                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                            </div>
-                            <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                                <img class="img-responsive" src="img/phones.png" alt="">
-                            </div>
+                                <h2 class="section-heading">28 Septembre</h2>
+<div class="daybyday">
+  <h1>Ut enim ad minim veniam</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>                           </div>
+                            <div class="col-lg-4 col-sm-4">
+                                <hr class="section-heading-spacer">
+                                <div class="clearfix"></div>
+                                <h2 class="section-heading">29 Septembre</h2>
+<div class="daybyday">
+  <h1>Ut enim ad minim veniam</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>                           </div>
+                            <div class="col-lg-4 col-sm-4">
+                                <hr class="section-heading-spacer">
+                                <div class="clearfix"></div>
+                                <h2 class="section-heading">30 Septembre</h2>
+<div class="daybyday">
+  <h1>Ut enim ad minim veniam</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>                           </div>
                         </div>
                     </div>
                     <!-- /.container -->
@@ -108,6 +130,9 @@
             <script src="bower_components/animsition/dist/js/animsition.min.js"></script>
             <script src="bower_components/scrollreveal/dist/scrollreveal.js"></script>
             <script src="bower_components/jquery.fitvids/jquery.fitvids.js"></script>
+            <script src="bower_components/transitionize/dist/transitionize.js"></script>
+            <script src="bower_components/fastclick/lib/fastclick.js"></script>
+            <script src="bower_components/switchery/dist/switchery.js"></script>
             <!-- endbower -->
             <script src="main.js"></script>
         </body>

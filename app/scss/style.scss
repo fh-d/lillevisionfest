@@ -1,5 +1,6 @@
 @import "config.scss";
 @import "fonts.scss";
+@import "input.scss";
 
 body{
     width: 100%;
@@ -62,53 +63,14 @@ svg.finished * {
 #keyhole{
     width: 400px;
     display: inline-block;
+              @media screen and (max-width:$breakpoints-xs) {
+    display: none;
+
+  }
 
 }
 
 
-#move_me {
-    width: 20%;
-    height: 3900px;
-    position:absolute;
-    z-index: -50;
-}
-#content1 {
-    position: absolute;
-    left: 10em;
-    background: #111111;
-    width: 100%;
-    height:100%;
-        z-index: -50;
-
-}
-#content2 {
-    position: absolute;
-    left: 50vw;
-    background: #111111;
-    width: 15%;
-    height:100%;
-        z-index: -50;
-
-}
-#content3 {
-    position: absolute;
-    left: 80vw;
-    background: red;
-    width: 25%;
-    height:100%;
-    z-index: -50;
-    opacity: 0.5;
-
-}
-#content4 {
-    position: absolute;
-    left: 20vw;
-    background: #0C0C0C;
-    width: 25%;
-    height:100%;
-    z-index: -50;
-
-}
 
 .topnav {
     font-size: 14px; 
@@ -118,6 +80,7 @@ h1, h2{
         font-family: "Avenir LT Std-Heavy";
 
 }
+
 .introtitle {
     font-size: 3em;
 }
@@ -126,8 +89,8 @@ h1, h2{
 }
 
 .content-section-b {
-    padding-top: calc(80vw / 5); 
-    padding-bottom: calc(80vw / 5); 
+    padding-top: calc(80vh / 5); 
+    padding-bottom: calc(80vh / 5); 
 }
 
 .section-heading {
@@ -143,12 +106,35 @@ h1, h2{
 .minimum{
     min-width: 50px;
     display: inline-block;
-    overflow: hidden;
 }
 
 .b-inverse{
     float:right;
+    margin-top:10vh;
 }
 .lead{
-    font-family: Cousine;
+}
+
+.daybyday {
+  transition: all 0.2s cubic-bezier(.7,.2,.17,1);
+  box-shadow: 0 0 2px hsla(0,0%,0%,0.1); 
+  overflow:hidden;
+  position: relative;
+  background: hsla(0,0%,100%,0.5);
+}
+
+.daybyday:hover {
+  background: hsla(0,0%,100%,1);
+  transform: scale(1.02);
+  box-shadow: 0 46px 12px -16px hsla(0,0%,0%,0.05); 
+}
+
+#mobilelogo{
+    width:100px;
+    height:100px;
+    background-color:red;
+                  @media screen and (min-width:$breakpoints-xs) {
+    display: inline;
+
+  }
 }
