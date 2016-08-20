@@ -21,8 +21,8 @@
     "Flowtype.js": "FlowType.JS#^1.1.0",
     "animsition": "^4.0.2",
     "scrollreveal": "^3.3.1",
-    "jquery.fitvids": "^1.1.0",
-    "switchery": "^0.8.1"
+    "modaal": "^0.3.1",
+    "jquery.countdown": "^2.2.0"
   },
   "overrides": {
     "bootstrap": {

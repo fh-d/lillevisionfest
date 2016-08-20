@@ -156,16 +156,16 @@ h1, h2{
   height: 100vh;
   width: 100vw;
   z-index: -1;
-  background: url(../../assets/img/background3.jpg) no-repeat center;
+  background: url(../../assets/img/background5.jpg) no-repeat center;
   background-size:cover;
-  animation: leaves 10s infinite alternate; }
+  animation: leaves 20s infinite alternate; }
 
 @-webkit-keyframes leaves {
     0% {
         -webkit-transform: scale(1.0);
     }
     100% {
-        -webkit-transform: scale(1.2);
+        -webkit-transform: scale(1.1);
     }
 }
 
@@ -174,6 +174,20 @@ h1, h2{
         transform: scale(1.0);
     }
     100% {
-        transform:  scale(1.2);
+        transform:  scale(1.1);
     }
 }
+.button.play {
+    width: 60px;
+    height: 60px;
+    background-color: #FFF;
+    background-image: url(../../assets/play-button.svg) no-repeat center;
+}
+
+.button.play:hover {
+  animation-duration: 1s;
+  animation-name: leaves;
+  animation-iteration-count: 1;
+  cursor: pointer;
+}
+

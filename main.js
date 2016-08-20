@@ -122,4 +122,25 @@ function readCookie(name) {
   return null;
 }
 
-   
+//scrollreaveal
+window.sr = ScrollReveal({ duration: 2000 });;
+
+sr.reveal('.foo', {     
+    duration: 400,
+    delay: 100,
+    opacity: 0 }, 50);
+
+sr.reveal('.folio', {
+    duration: 900,
+    delay: 0,
+    opacity: 0.6
+});
+sr.reveal('.foliotwo', {
+    duration: 500,
+    delay: 0,
+    opacity: 0.6
+});
+sr.reveal('.aproposmooth', {
+    delay: 0,
+    opacity: 0.8
+});
