@@ -10,7 +10,7 @@
         <!-- endbower -->
         <link rel="stylesheet" href="app/css/style.css" />
     </head>
-        <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+        <body class="js" id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
             <div id="content_wrapper">
                 <!-- Navigation -->
                 <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
@@ -24,6 +24,9 @@
                         </div>
                         <div id="keyhole"></div>
                         <div id="mobilelogo"></div>
+
+    <div id="preloader">                        <div id="keyhole"></div>
+</div>
 
                         <!-- Collect the nav links, forms, and other content for toggling -->
 	<nav id="cd-vertical-nav">
@@ -243,5 +246,13 @@ $('.video').modaal({
     $(this).html(event.strftime('J - %D'));
   });
 </script>
+<script>jQuery(document).ready(function($) {  
+
+// site preloader -- also uncomment the div in the header and the css style for #preloader
+$(window).load(function(){
+	$('#preloader').fadeOut('slow',function(){$(this).remove();});
+});
+
+});</script>
         </body>
     </html>
