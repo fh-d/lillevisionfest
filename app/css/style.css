@@ -502,8 +502,8 @@ p {
   cursor: pointer; }
 
 #section2, #section3, #section4, #section5, #section6, #section7 {
-  height: 100vh;
-  width: 100 vw; }
+  min-height: 100vh;
+  min-width: 100 vw; }
 
 .js div#preloader {
   position: fixed;
