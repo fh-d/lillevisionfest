@@ -1,3 +1,43 @@
+$(function(){  //  shorthand
+ $('#monster').hide().fadeIn( 3000 );
+});
+$(function(){  //  shorthand
+ $('.buttonon').hide().fadeIn( 6000 );
+});
+
+
+     $('#getting-started').countdown('2016/09/28', function(event) {
+        $(this).html(event.strftime('J - %D'));
+    });
+    jQuery(document).ready(function($) {
+
+        $(window).load(function() {
+            $('#preloader').fadeOut('slow', function() {
+                $(this).remove();
+            });
+        });
+
+    });
+    //scrollreaveal
+    window.sr = ScrollReveal({
+        duration: 2000
+    });;
+
+    sr.reveal('.foo', {
+        duration: 400,
+        delay: 0,
+        opacity: 0
+    }, 50);
+sr.reveal('.artists-entity', {
+    duration: 300,
+    delay: 50,
+    opacity: 0.6
+});
+sr.reveal('.time', {
+    duration: 900,
+    delay: 0,
+    opacity: 0.6
+});
 // Hide Header on on scroll down
 var didScroll;
 var lastScrollTop = 0;
@@ -36,6 +76,21 @@ function hasScrolled() {
     
     lastScrollTop = st;
 }
+
+$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
 
 jQuery(document).ready(function($){
 	var contentSections = $('.cd-section'),
