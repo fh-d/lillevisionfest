@@ -51,6 +51,21 @@ svg.finished * {
 
 
 
+header {
+    height: 40px;
+    position: fixed;
+    top: 0;
+    transition: top 0.3s ease-in-out;
+    width: 100%;    
+    margin-top: 5vh;
+
+}
+
+.nav-up {
+    top: -18vh;
+    opacity:0.5;
+}
+
 .topnav {
     font-size: 14px; 
 }
@@ -59,7 +74,10 @@ h1, h2{
         font-family: "Avenir LT Std-Heavy";
 
 }
+p{
+    font-size:18px;
 
+}
 .introtitle {
     font-size: 3em;
 }
@@ -123,12 +141,6 @@ h1, h2{
   height: 100vh;
   width: 100vw; }
 
-@keyframes pound {
-	from { transform: none; }
-	50% { transform: scale(1.4); }
-	to { transform: none; }
-}
-
 .attached:before {
   content: "";
   position: absolute;
@@ -138,8 +150,28 @@ h1, h2{
   background: url(../../assets/img/background8.jpg) no-repeat center;
   opacity: 0.5;
   background-size:cover;
-  animation: leaves 20s infinite alternate; }
+  animation: leaves 20s infinite alternate; 
+    
+}
 
+.attached-2 {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw; }
+
+.attached-2:before {
+  content: "";
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+  background: url(../../assets/img/background11.jpg) no-repeat center;
+  opacity: 0.5;
+  background-size:cover;
+  animation: leaves 20s infinite alternate; 
+    
+}
 @-webkit-keyframes leaves {
     0% {
         -webkit-transform: scale(1.0);
@@ -221,3 +253,38 @@ h1, h2{
          -o-animation: fadein 1s infinite alternate;; /* Opera < 12.1 */
             animation: fadein 1s ;
 }
+/* BUTTON CSS
+------------------------------------------- */
+
+a.buttonon{
+  display:inline-block;
+    font-size: 22px;
+	text-decoration:none;	
+	
+	color:rgba(255, 255, 255, 1);
+	brackground-color:#FFF;
+	border:2px solid rgba(255, 255, 255, 1);
+	border-radius:100px;
+	
+	padding: .3em 1em;
+	margin:5px;
+			
+	background-size: 200% 100%;	
+	background-image: linear-gradient(to right, transparent 50%, rgba(255, 255, 255, 1) 50%);
+	transition: background-position .3s cubic-bezier(0.19, 1, 0.22, 1) .1s, color .5s ease 0s, background-color .5s ease;
+}
+
+a.buttonon:hover{
+	color:rgba(1, 1, 1, 1);
+	background-color:rgba(255, 255, 255, 1);
+	background-position: -100% 100%;
+}
+.hcenter{
+    margin-top: 30vh;
+}
+.phylosophy{
+        font-family: "Avenir LT Std-Light", Helvetica,Arial,sans-serif;
+                  letter-spacing: .05em;
+          line-height: 1.4;
+}
+

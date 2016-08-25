@@ -16,10 +16,15 @@
 	font-weight: 900;
 	font-style: normal;
 }
-
-
-
-
+@font-face {
+	font-family: 'Avenir LT Std-Light';
+	src: url('../fonts/avenirlts/AvenirLTStd-Light.eot');
+	src: url('../fonts/avenirlts/AvenirLTStd-Light.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/avenirlts/AvenirLTStd-Light.woff') format('woff'),
+		url('../fonts/avenirlts/AvenirLTStd-Light.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
 @font-face {
     font-family: 'resistanceregular';
     src: url('../fonts/resistance_generale-webfont.eot');

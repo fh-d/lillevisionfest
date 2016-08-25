@@ -13,6 +13,13 @@
   font-style: normal; }
 
 @font-face {
+  font-family: 'Avenir LT Std-Light';
+  src: url("../fonts/avenirlts/AvenirLTStd-Light.eot");
+  src: url("../fonts/avenirlts/AvenirLTStd-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/avenirlts/AvenirLTStd-Light.woff") format("woff"), url("../fonts/avenirlts/AvenirLTStd-Light.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
   font-family: 'resistanceregular';
   src: url("../fonts/resistance_generale-webfont.eot");
   src: url("../fonts/resistance_generale-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/resistance_generale-webfont.woff2") format("woff2"), url("../fonts/resistance_generale-webfont.woff") format("woff"), url("../fonts/resistance_generale-webfont.ttf") format("truetype");
@@ -98,7 +105,7 @@ Modules - reusable parts of our design
   height: 25px;
   width: 25px;
   border-radius: 50%;
-  background-color: #d88683;
+  background-color: #fbc605;
   -webkit-transition: -webkit-transform 0.2s, background-color 0.5s;
   -moz-transition: -moz-transform 0.2s, background-color 0.5s;
   transition: transform 0.2s, background-color 0.5s;
@@ -335,11 +342,26 @@ svg.finished * {
     #keyhole {
       display: none; } }
 
+header {
+  height: 40px;
+  position: fixed;
+  top: 0;
+  transition: top 0.3s ease-in-out;
+  width: 100%;
+  margin-top: 5vh; }
+
+.nav-up {
+  top: -18vh;
+  opacity: 0.5; }
+
 .topnav {
   font-size: 14px; }
 
 h1, h2 {
   font-family: "Avenir LT Std-Heavy"; }
+
+p {
+  font-size: 18px; }
 
 .introtitle {
   font-size: 3em; }
@@ -393,14 +415,6 @@ h1, h2 {
   height: 100vh;
   width: 100vw; }
 
-@keyframes pound {
-  from {
-    transform: none; }
-  50% {
-    transform: scale(1.4); }
-  to {
-    transform: none; } }
-
 .attached:before {
   content: "";
   position: absolute;
@@ -408,6 +422,23 @@ h1, h2 {
   width: 100vw;
   z-index: -1;
   background: url(../../assets/img/background8.jpg) no-repeat center;
+  opacity: 0.5;
+  background-size: cover;
+  animation: leaves 20s infinite alternate; }
+
+.attached-2 {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw; }
+
+.attached-2:before {
+  content: "";
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+  background: url(../../assets/img/background11.jpg) no-repeat center;
   opacity: 0.5;
   background-size: cover;
   animation: leaves 20s infinite alternate; }
@@ -492,3 +523,32 @@ h1, h2 {
   -o-animation: fadein 1s infinite alternate;
   /* Opera < 12.1 */
   animation: fadein 1s; }
+
+/* BUTTON CSS
+------------------------------------------- */
+a.buttonon {
+  display: inline-block;
+  font-size: 22px;
+  text-decoration: none;
+  color: white;
+  brackground-color: #FFF;
+  border: 2px solid white;
+  border-radius: 100px;
+  padding: .3em 1em;
+  margin: 5px;
+  background-size: 200% 100%;
+  background-image: linear-gradient(to right, transparent 50%, white 50%);
+  transition: background-position 0.3s cubic-bezier(0.19, 1, 0.22, 1) 0.1s, color 0.5s ease 0s, background-color 0.5s ease; }
+
+a.buttonon:hover {
+  color: #010101;
+  background-color: white;
+  background-position: -100% 100%; }
+
+.hcenter {
+  margin-top: 30vh; }
+
+.phylosophy {
+  font-family: "Avenir LT Std-Light", Helvetica,Arial,sans-serif;
+  letter-spacing: .05em;
+  line-height: 1.4; }
