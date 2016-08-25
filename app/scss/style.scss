@@ -9,8 +9,9 @@ body{
     height: 100%;
     font-family: "Avenir LT Std-Medium", Helvetica,Arial,sans-serif;
     color: #fff;
-    background-color: #0C0C0C;
+    background-color: #000;
     font-size: 18px;
+    min-width: 24.15em;
       -webkit-font-smoothing:  subpixel-antialiased  ;
 
       -moz-osx-font-smoothing:  grayscale  ;
@@ -58,7 +59,20 @@ header {
     transition: top 0.3s ease-in-out;
     width: 100%;    
     margin-top: 5vh;
+    .earlybird{
+      width:50%;
+      float: right;
+@media (max-width: $breakpoints-xs) {
+display:none;
+}
+}
+}
 
+.mousescroll {
+  position: absolute;
+  left: calc(50% - 15px);
+  bottom: 5vh;
+  max-width: 40px;
 }
 
 .nav-up {
@@ -137,7 +151,6 @@ p{
 }
 .attached {
   position: relative;
-  overflow: hidden;
   height: 100vh;
   width: 100vw; }
 
@@ -287,4 +300,111 @@ a.buttonon:hover{
                   letter-spacing: .05em;
           line-height: 1.4;
 }
+.hide {
+  overflow: hidden;
+}
 
+#programmation{
+ .row {
+  margin-bottom: 1em;
+}
+ .row.last {
+  margin-bottom: 2em;
+}
+ .session {
+  margin: .5em 0 .25em;
+}
+ img {
+  max-width: 50%;
+}
+ .time {
+  background: #57335f;
+  color: white;
+  padding: 0.6em;
+}
+
+ .artists-entity {
+  background: #fddcec;
+  padding: 1em;
+  position: relative;
+}
+ .artists-entity h2 {
+  margin: .2em 0;
+  font-size: 1.4em;
+}
+ .artists-info {
+  padding-bottom: 1.5em;
+}
+ button.abstract-toggle {
+  font-size: 1.6em;
+  background: #efcadc;
+  color: #57335f;
+  position: absolute;
+  width: 100%;
+  bottom: 1px;
+  border-bottom: 1px solid #efcadc;
+  left: 0;
+}
+ button.abstract-toggle:hover {
+  background: #eabcd3;
+  border-bottom: 1px solid #eabcd3;
+}
+ .abstract {
+  display: none;
+  clear: both;
+}
+ .abstract.active {
+  display: inline-block;
+}
+@media (min-width: $breakpoints-xs) {
+   img {
+    width: 7.5em;
+    float: left;
+  }
+   .artists-info {
+    margin-left: 8.5em;
+  }
+}
+@media (min-width: $breakpoints-sm) {
+   .session {
+    position: relative;
+  }
+   .row {
+    margin: 0 0 0 7.5em;
+    border-left: 7px solid #57335f;
+    overflow: auto;
+  }
+   img {
+    width: 9.5em;
+  }
+   .artists-info {
+    margin-left: 10.5em;
+  }
+   .artists-entity {
+    margin-bottom: 2em;
+  }
+   .row:last-of-type .artists-entity,
+   .row.last .artists-entity {
+    margin-bottom: 0;
+  }
+   .time {
+    position: absolute;
+    left: 0;
+    width: 7.5em;
+  }
+}
+@media (min-width: $breakpoints-lg) {
+   .time {
+    font-size: 1.2em;
+  }
+   .row {
+    margin: 0 0 0 8.5em;
+  }
+   .artists-entity {
+    padding: 1.5em;
+    margin-bottom: 3em;
+  }
+   .artists-info {
+    margin-left: 11em;
+  }
+}}
