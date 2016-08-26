@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'Avenir LT Std-Heavy';
   src: url("../fonts/avenirlts/AvenirLTStd-Heavy.eot");
@@ -421,7 +422,6 @@ p {
 .daybyday {
   transition: all 0.2s cubic-bezier(0.7, 0.2, 0.17, 1);
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
   position: relative;
   background: rgba(255, 255, 255, 0.5); }
 
@@ -433,7 +433,9 @@ p {
 #mobilelogo {
   width: 100px;
   height: 100px;
-  background-color: red; }
+  background: url(../../favicon.png) no-repeat center;
+  background-size: cover;
+  /* version standardisée */ }
   @media screen and (min-width: 768px) {
     #mobilelogo {
       display: inline; } }
@@ -456,8 +458,7 @@ p {
 
 .attached-2 {
   position: relative;
-  overflow: hidden;
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw; }
 
 .attached-2:before {
@@ -574,7 +575,7 @@ a.buttonon:hover {
   background-position: -100% 100%; }
 
 .hcenter {
-  margin-top: 30vh; }
+  margin-top: 10vh; }
 
 .phylosophy {
   font-family: "Avenir LT Std-Light", Helvetica,Arial,sans-serif;
@@ -586,6 +587,10 @@ a.buttonon:hover {
 
 #programmation .row {
   margin-bottom: 1em; }
+  #programmation .row .danse {
+    background-color: #552f87; }
+  #programmation .row .music {
+    background-color: #c4261f; }
 
 #programmation .row.last {
   margin-bottom: 2em; }
@@ -597,12 +602,14 @@ a.buttonon:hover {
   max-width: 40%; }
 
 #programmation .time {
-  background: #57335f;
+  background: white;
   color: black;
   padding: 0.6em; }
 
+#programmation .session {
+  padding-top: 10vh; }
+
 #programmation .artists-entity {
-  background: #fddcec;
   padding: 1em;
   position: relative; }
 
@@ -646,7 +653,7 @@ a.buttonon:hover {
     position: relative; }
   #programmation .row {
     margin: 0 0 0 7.5em;
-    border-left: 7px solid #57335f;
+    border-left: 7px solid #fbbe0a;
     overflow: auto; }
   #programmation img {
     width: 9.5em; }
@@ -682,3 +689,96 @@ img.center {
 
 img.padding {
   padding-bottom: 5%; }
+
+.pricing-section__title {
+  font-size: 1.4em;
+  font-weight: 700;
+  margin: 3em 0 5em;
+  flex: none; }
+
+.bg-1 {
+  background-size: cover;
+  color: #fff; }
+
+/* Common styles */
+.pricing {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto 3em; }
+
+.pricing__item {
+  position: relative;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: stretch;
+  align-items: stretch;
+  text-align: center;
+  -webkit-flex: 0 1 330px; }
+
+.pricing__feature-list {
+  text-align: left; }
+
+.pricing__action {
+  color: inherit;
+  border: none;
+  background: none; }
+
+.pricing__action:focus {
+  outline: none; }
+
+/* Individual styles */
+/* Sonam */
+.pricing--sonam .pricing__item {
+  margin: 0.5em;
+  padding: 1em;
+  cursor: default;
+  border-radius: 10px;
+  background: #1F1F1F;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05), 0 15px 30px -10px rgba(0, 0, 0, 0.3);
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s; }
+
+.pricing--sonam .pricing__item:hover {
+  background: #141315; }
+
+.pricing--sonam .pricing__title {
+  width: 100%;
+  margin: 0 0 0.25em;
+  padding: 0 0 0.5em;
+  border-bottom: 3px solid #552f87; }
+
+.pricing--sonam .pricing__price {
+  color: #fbbe0a;
+  font-size: 1.25em;
+  padding: 1em 0 0.75em; }
+
+.pricing--sonam .pricing__sentence {
+  font-weight: bold; }
+
+.pricing--sonam .pricing__feature-list {
+  margin: 0;
+  padding: 1em 1.25em 2em;
+  font-size: 0.6em;
+  font-family: "Avenir LT Std-Light", Helvetica,Arial,sans-serif;
+  letter-spacing: .05em;
+  line-height: 1.1; }
+
+.pricing--sonam .pricing__action {
+  font-weight: bold;
+  margin-top: auto;
+  padding: 0.75em 2em;
+  border-radius: 5px;
+  background: #c4261f;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s; }
+
+.pricing--sonam .pricing__action:hover,
+.pricing--sonam .pricing__action:focus {
+  background: #e42e1a; }
